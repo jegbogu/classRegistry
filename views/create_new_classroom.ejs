@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<%-include('partials/head') %> 
+<link rel="stylesheet" href="stylesheets/create_new_classroom.css">
+<title>Create New Classroom |Loctech Class Registry</title>
+<style>
+   body{
+    background-image: url('images/image 1.png');
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-color: #086688;
+  }
+</style>
+ 
+<body>
+    <!-- nav -->
+    <%-include('partials/nav') %> 
+    <!-- Form Layout -->
+    <div class="container-lg">
+        <div class="text-center">
+            <h1 style="color:white;">+ CREATE NEW CLASSROOM</h1>
+        </div>
+        
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="/createNew" method="post">
+                    <label for="classname" class="form-label">Class Name</label>
+                    <input type="text" name="className" class="form-control" id="classname" placeholder="e.g. Web Development Design">
+
+                    <label for="section" class="form-label">Section</label>
+                    <select class="form-select" id="section" name="Section">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+
+                    <label for="days" class="form-label">Days</label>
+                    <select class="form-select" id="days" name="Days">
+                        <option value="mon_tues_thur">Monday, Wednesday, Friday</option>
+                        <option value="wed_fri_sat">Tuesday, Thursday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <div class="chooseDays">
+                      <h3>Choose Days</h3>
+
+                      <div class="formControl">
+                        <input type="checkbox" name="Monday" id="Monday">
+                      <label for="monday">Monday</label>
+                      </div>
+
+                      <div class="formControl">
+                        <input type="checkbox" name="Tuesday" id="Tuesday">
+                      <label for="monday">Tuesday</label>
+                      </div>
+
+                      <div class="formControl">
+                        <input type="checkbox" name="Wednesday" id="Wednesday">
+                      <label for="Wednesday">Wednesday</label>
+                      </div>
+
+                      <div class="formControl">
+                        <input type="checkbox" name="Thursday" id="Thursday">
+                      <label for="Thursday">Thursday</label>
+                      </div>
+
+                      <div class="formControl">
+                        <input type="checkbox" name="Friday" id="Friday">
+                      <label for="Friday">Friday</label>
+                      </div>
+                      
+                      <div class="formControl">
+                        <input type="checkbox" name="Saturday" id="Saturday">
+                      <label for="Saturday">Saturday</label>
+                      </div>
+                    </div>
+
+                    <label for="number_of_weeks">Number of Weeks</label>
+                    <input type="number" class="form-control" name="number_of_weeks" id="number_of_weeks" placeholder="insert number">
+
+                    <div class="my-4 text-end">
+                        <button type="submit" class="btn btn-secondary" id="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+          <p>© 2022 Loctech IT Training Institute. All rights reserved.</p>
+  
+        </div>
+      </footer>
+    
+  
+
+      <script src="javascripts/create_new_classroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+  label{
+      color: var(--secondary-color);
+     
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.8em;
+  }
+  nav a{
+    color: var(--secondary-color);
+  }
+  .navbar{
+    background-color:var(--primary-color)
+  }
+  footer{
+    background-color:var(--tetiary-color);
+    margin-bottom: 0px;
+    padding: 30px;
+    
+  }
+  footer p{
+    text-align: center;
+    color: var(--secondary-color)
+  }
+  #login{
+    background-color: var(--primary-color);
+    font-weight: bolder;
+  }
+  #login:hover{
+    background-color: var(--secondary-color);
+    color: var(--tetiary-color);
+  }
+  /* validation */
+  .errDisplay{
+border: solid red 2px;
+
+}
+
+
+.successMsg{
+border: solid  var(--tetiary-color)
+
+}
+p[class$='ErrorMsg']{
+color:rgb(233, 189, 189);
+font-weight:bolder;
+}

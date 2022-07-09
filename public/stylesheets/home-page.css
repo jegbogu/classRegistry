@@ -1,0 +1,16 @@
+ 
+  body{
+     
+        background-color: var(--tetiary-color);
+    }
+footer{
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding: 30px;
+    
+  }
+  footer p{
+    text-align: center;
+    margin-bottom: 0px;
+    color: var(--secondary-color)
+  }

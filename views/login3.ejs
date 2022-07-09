@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <%-include('partials/head') %> 
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <title>Login |Loctech Class Registry</title>
+
+<body style="background-color:var(--tetiary-color);">
+     <!-- nav -->
+     <%-include('partials/nav') %> 
+
+    <div class="container-lg my-4">
+        <div class="row">
+
+            <div class="col-6">
+                 
+                <figure style="margin-left:-130px;margin-top:-100px;">
+                  <img src="images/1000_F_265604412_aEQVW0NkFPrY1aOkLuIo4Sxn2INQEnTe 3.png"  alt="image" width="130%">
+                </figure>
+
+            </div>
+
+            <div class="col-6 mt-5">
+                <form action="/login" class="needs-validation" novalidate  method="post">
+                    <label for="Email">Email</label>
+                    <input type="email" class="form-control" name="Email" id="email" placeholder="sample@gmail.com">
+                    <p class="emailErrorMsg"></p>
+
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend" style="cursor:pointer;">Show</span>
+                          <input type="password" class="form-control" id="validationCustomUsername" name="Password" aria-describedby="inputGroupPrepend" required> 
+                        
+                           
+                        </div>
+                      </div>
+                    
+ 
+                      <p class="errorMsg"></p>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-primary mt-2" type="button" id="register">LOGIN</button>
+                        <p class="passwordErrorMsg"></p>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="container-fluid" style="margin-top:-20px;">
+        <p>© 2022 Loctech IT Training Institute. All rights reserved.</p>
+
+      </div>
+    </footer>
+
+    
+    <!-- <script src="javascripts/login.js"></script> -->
+</body>
+</html>

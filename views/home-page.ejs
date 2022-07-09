@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<%-include('partials/head') %> 
+<link rel="stylesheet" href="stylesheets/home-page.css">
+<title>Home |Loctech Class Registry</title>
+
+<body>
+      <!-- nav -->
+      <%-include('partials/nav') %> 
+     
+    <div class="container mt-5">
+        <!-- Row One -->
+        <div class="row mt-3">
+            
+                <% for( let index = 0; index < data.length; index++ ) { %>
+                    
+                    <div class="col-lg-4">
+                    <div class="card text-bg-dark bg-dark text-light mb-3 " style="max-width: 18rem;">
+                    
+                        <div class="card-body">
+                            <div class="container-xs"  style="border-bottom: 1px solid white;">
+                                <div class="row">
+                                    <div class="col-10" style="text-align: left;">
+                                        <h5 class="card-title" ><%=data[index].className%> </h5>
+                                    </div>
+                                    <div class="col-2" style="text-align: right;"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                                </div>
+                            </div>
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark text-light border-0" aria-current="true">Section: <%=data[index].Section%> </li>
+                                <% if (index[data]==='others') { %>
+                                    <li class="list-group-item bg-dark text-light border-0" aria-current="true">Days:hello</li>
+                                <% }else{%>
+                                    <li class="list-group-item bg-dark text-light border-0" aria-current="true">Days: <%=data[index].Days%> </li>
+                                <% }%>
+                                
+                                <li class="list-group-item bg-dark text-light border-0" aria-current="true">Number of Weeks: <%=data[index].number_of_weeks %> </li>
+                                <!-- <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+                
+            
+        <!-- Row Two End -->
+    </div>
+</div>
+    <footer>
+        <div class="container-fluid">
+          <p>© 2022 Loctech IT Training Institute. All rights reserved.</p>
+  
+        </div>
+      </footer>
+    
+    <!-- JS Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap End -->
+</body>
+</html>

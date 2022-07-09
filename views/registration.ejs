@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<%-include('partials/head') %> 
+
+<link rel="stylesheet" href="stylesheets/registration.css">
+<title>Registration |Loctech Class Registry</title>
+
+<body style="background-color:#086688 ;">
+       <!-- nav -->
+    <%-include('partials/nav') %> 
+      <h1 style="text-align:center;margin-top:20px;color:var(--secondary-color);"> REGISTRATION</h1>
+    <div class="container-lg mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center text-info">
+                   
+                   <img src="images/image 1.png" alt="image" width="100%" >
+                </div>
+            </div>
+            <div class="col-6" style="box-shadow:gray 2px 2px 2px ;border:solid 2px rgb(255, 255, 255) ;border-radius:5px;">
+              
+                <form action="/registration" method="post">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" name="Name">
+                    <p class="nameErrorMsg"></p>
+
+                    <label for="Email">Email</label>
+                    <input type="email" class="form-control" name="Email" id="email" placeholder="sample@gmail.com">
+                    <p class="emailErrorMsg"></p>
+                    
+
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend" style="cursor:pointer;">Show</span>
+                          <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required name="Password"> 
+                          <p class="passwordErrorMsg"></p>
+                           
+                        </div>
+
+                    <button type="submit" class="btn btn-info my-4 px-5" style="width:100%" id="register">REGISTER</button>  
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="container-fluid col-12">
+        <p>© 2022 Loctech IT Training Institute. All rights reserved.</p>
+
+      </div>
+    </footer>
+     
+    <script src="javascripts/registration.js"></script>
+</body>
+</html>

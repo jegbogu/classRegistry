@@ -1,0 +1,46 @@
+ 
+ 
+  label{
+      color: var(--secondary-color);
+     
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.8em;
+  }
+  nav a{
+    color: var(--secondary-color);
+  }
+  .navbar{
+    background-color:var(--primary-color)
+  }
+  footer{
+    background-color:var(--tetiary-color);
+    margin-bottom: 0px;
+    padding: 30px;
+    
+  }
+  .chooseDays{
+    border: solid var(--secondary-color) 2px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow:gray 2px 2px 2px ;
+    border:solid 2px rgb(255, 255, 255) ;
+    border-radius:5px;
+    display: none;
+  }
+  .chooseDays label{
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  footer p{
+    text-align: center;
+    color: var(--secondary-color)
+  }
+  #submit{
+    background-color: var(--primary-color);
+    font-weight: bolder;
+  }
+  #submit:hover{
+    background-color: var(--secondary-color);
+    color: var(--tetiary-color);
+  }

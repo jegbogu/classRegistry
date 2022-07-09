@@ -1,0 +1,16 @@
+ 
+    body{
+        color: white;
+        background-color: var(--tetiary-color);
+    }
+    h1{
+        font-family: cursive;
+        font-weight:900;
+        letter-spacing: 2px;
+        font-size: 60px
+    }
+    footer p{
+    margin-top: 70px;
+    text-align: center;
+    color: var(--secondary-color)
+  }
